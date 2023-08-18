@@ -1,7 +1,7 @@
 # ServerStub
 A mock server for testing API interactions
 
-## Как использовать?
+## How to Use?
 #### 1. Specify the host and port on which the server will be launched
 ````json
     "server": {
