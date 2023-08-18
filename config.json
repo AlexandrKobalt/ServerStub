@@ -1,0 +1,25 @@
+{
+    "host": "127.0.0.1",
+    "port": 8080,
+    "endpoints": [
+        {
+            "path": "/photo",
+            "method": "GET",
+            "response": "Here is your photo"
+        },
+        {
+            "path": "/data",
+            "method": "POST",
+            "response": {
+                "error": false,
+                "message": "",
+                "DATA": {
+                    "a": "",
+                    "x": "",
+                    "critical": 0
+                },
+                "warning": ""
+            }
+        }
+    ]
+}
