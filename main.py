@@ -46,8 +46,8 @@ def main():
     with open('config.json') as config_file:
         config = json.load(config_file)
 
-    host = config.get("host", "127.0.0.1")
-    port = config.get("port", 8080)
+    host = config.get("server", {}).get("host", "127.0.0.1")
+    port = config.get("server", {}).get("port", 8080)
 
     server_address = (host, port)
     httpd = http.server.HTTPServer(server_address, MyHTTPRequestHandler)
